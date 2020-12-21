@@ -1,5 +1,6 @@
 package com.odhan.study.springboot.domain.posts;
 
+import com.odhan.study.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     //@Id : 해당 테이블의 PK필드
     //@GeneratedValue : PK의 생성규칙
